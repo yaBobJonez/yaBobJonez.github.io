@@ -24,11 +24,6 @@
 				padding: 8px;
 			} .babel {font: normal 11px "Garamond";padding:5px;}
 			.info {font: italic 14pt "Verdana";}
-			.card img {width:25vh;height:25vh;}
-			.card h4 {margin:7px;font-size:20pt;}
-			.card p {margin:7px;font-size:10pt;}
-			.card a {background:blue;border-radius:8px;padding:10px 20px;color:white;text-align:center;margin:7px;display:inline-block;text-decoration:none;}
-			.card {border: 2px solid gray;background:#ffe45c;padding:10px;}
 			.socials {
 				list-style-type: none;
 				text-align: left;
@@ -40,7 +35,11 @@
 				font-size: 8pt;
 				color: lightgray;
 				text-decoration:none;
-			}
+			} .projects a {
+			    font: bold 5vw 'Garamond';
+			    text-decoration: none;
+			    color: #fcbe66;
+			} .projects:hover { box-shadow: 0 0 12px yellow; }
 		</style>
 	</head>
 	<body>
@@ -60,79 +59,22 @@
 		<p class="info">
 			Привіт! Мене звати Михайло. Я народився в Києві й навчаюся у старшій школі. Я люблю читати книжки та програмувати — бажаю стати розробником програмного забезпечення. Цей сайт є моєю персональною сторінкою, створеною за 4 години у якості шкільного проєкту.
 		</p>
-		<h2 style="font: bold 20pt 'Garamond';">Мої проєкти:</h2>
-		<table style="margin: 0px auto;">
-			<tr>
-				<td class="card">
-					<img src="projCtpi.png"/>
-					<h4>CtPI</h4>
-					<p>Програма для кодування тексту в кольорові пікселі.</p>
-					<a href="https://github.com/yaBobJonez/CtPI">Windows</a>
-				</td>
-				<td class="card">
-					<img src="projNoImg.png"/>
-					<h4>iPear</h4>
-					<p>Симулятор смартфона.</p>
-					<a href="https://github.com/yaBobJonez/iPear">Windows</a>
-				</td>
-				<td class="card">
-					<img src="projFirstAid.png"/>
-					<h4>yaFirstAid</h4>
-					<p>Вікі-сайт про медицину (в розробці).</p>
-					<a href="https://yaBobJonez.github.io/FirstAid">Відвідати</a>
-				</td>
-			</tr>
-			<tr>
-				<td class="card">
-					<img src="projWeather.png"/>
-					<h4>yaWeather</h4>
-					<p>Програма для перегляду погоди.</p>
-					<a href="https://github.com/yaBobJonez/yaWeather">Windows/Linux/macOS</a>
-				</td>
-				<td class="card">
-					<img src="projNoImg.png"/>
-					<h4>SharedUtils</h4>
-					<p>Міні-бібліотека загального призначення для Java.</p>
-					<a href="https://github.com/yaBobJonez/SharedUtils">Завантажити</a>
-				</td>
-				<td class="card">
-					<img src="projSch3sap.png"/>
-					<h4>Sch3SAP</h4>
-					<p>Аудіо-плеєр з плануванням для школи №3, українською.</p>
-					<a href="https://github.com/yaBobJonez/Sch3SAP/wiki">Windows/Linux/macOS</a>
-				</td>
-			</tr>
-			<tr>
-				<td class="card">
-					<img src="projNoImg.png"/>
-					<h4>yaConverter</h4>
-					<p>Бібліотека для переведення одиниць вимірювання для PHP.</p>
-					<a href="https://github.com/yaBobJonez/yaConverter">Завантажити</a>
-				</td>
-				<td class="card">
-					<img src="projNit.png"/>
-					<h4>NIT</h4>
-					<p>Бібліотека графічного інтерфейсу для Java (в розробці).</p>
-					<a href="https://github.com/yaBobJonez/NIT">Переглянути</a>
-				</td>
-				<td class="card">
-					<img src="projSch3sap.png"/>
-					<h4>Сайт 11-А</h4>
-					<p>Динамічний розклад, корисні матеріали тощо для однокласників ;)</p>
-					<a href="https://yaBobJonez.github.io/Homework">Відвідати</a>
-				</td>
-			</tr>
-		</table>
-		<h2 style="font: bold 20pt 'Garamond';">Соціальне:</h2>
-		<ul class="socials">
-			<li><img class="icon" src="socEmail.png" /> <a href="mailto:yaBobJonez@gmail.com">Е-мейл</a></li>
-			<li><img class="icon" src="socTwitter.png" /> <a href="https://twitter.com/yaBobJonez">Twitter</a></li>
-			<li><img class="icon" src="socReddit.png" /> <a href="https://www.reddit.com/user/ya_Bob_Jonez">Reddit</a></li>
-			<li><img class="icon" src="socYouTube.png" /> <a href="https://www.youtube.com/channel/UCilytrgKPBpuJy3eNUV1jMw">YouTube</a></li>
-			<li><img class="icon" src="socStackoverflow.png" /> <a href="https://stackoverflow.com/users/9582087/ya-bob-jonez">Stackoverflow</a></li>
-			<li><img class="icon" src="socGithub.png" /> <a href="https://github.com/yaBobJonez">GitHub</a></li>
-			<li><img class="icon" src="socInstagram.png" /> <a href="https://www.instagram.com/ya_bob_jonez/">Instagram</a></li>
-		</ul>
+		<table style="width: 100%; table-layout: fixed;"><tr>
+		    <th>
+		    <h2 style="font: bold 20pt 'Garamond';">Соціальне:</h2>
+		    <ul class="socials">
+    			<li><img class="icon" src="socEmail.png" /> <a href="mailto:yaBobJonez@gmail.com">Е-мейл</a></li>
+    			<li><img class="icon" src="socTwitter.png" /> <a href="https://twitter.com/yaBobJonez">Twitter</a></li>
+    			<li><img class="icon" src="socReddit.png" /> <a href="https://www.reddit.com/user/ya_Bob_Jonez">Reddit</a></li>
+    			<li><img class="icon" src="socYouTube.png" /> <a href="https://www.youtube.com/channel/UCilytrgKPBpuJy3eNUV1jMw">YouTube</a></li>
+    			<li><img class="icon" src="socStackoverflow.png" /> <a href="https://stackoverflow.com/users/9582087/ya-bob-jonez">Stackoverflow</a></li>
+    			<li><img class="icon" src="socGithub.png" /> <a href="https://github.com/yaBobJonez">GitHub</a></li>
+    			<li><img class="icon" src="socInstagram.png" /> <a href="https://www.instagram.com/ya_bob_jonez/">Instagram</a></li>
+		    </ul>
+		    </th><th style="background-color: #5e0087; border-radius: 15px;" class="projects">
+		        <a href="projects.html">Мої проєкти</a>
+		    </th>
+		</tr></table>
 		<h2 style="font-size: 10pt; color: silver; margin-bottom: 2px;">Джерела:</h2>
 		<div class="refs">
 			<a href="https://www.flaticon.com/free-icon/ukraine_197572">Прапор України від Freepik;</a>
