@@ -40,6 +40,7 @@
 		    } footer a:hover { background-color: orange; }
 		    footer a:active { border: 1px solid white; }
 		</style>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/iframe-resizer/4.3.2/iframeResizer.min.js"></script>
 		<script>
 		    function showNav(toHide){
 		        document.querySelectorAll('nav a').forEach(function(navEl){ navEl.hidden = false; });
@@ -54,16 +55,8 @@
 		        let date = new Date(frame.contentDocument.lastModified);
 		        const dateOpt = {weekday: 'short', year: 'numeric', month: 'short', day: 'numeric', timeZoneName: 'short', hour: 'numeric', minute: 'numeric'};
 		        frame.contentDocument.body.insertAdjacentHTML("beforeend",
-		            '<p style="font-size: 1.4vw; color: #d9c198;">Остання правка: '+date.toLocaleString(undefined, dateOpt)+'</p>'
+		            '\<p style="font-size: 1.4vw; color: #d9c198;"\>Остання правка: '+date.toLocaleString(undefined, dateOpt)+'\</p\>'
 		        );
-		        frame.height = 0;
-		        frame.height = frame.contentDocument.body.scrollHeight +26;
-		        setInterval(function(){
-		            if(frame.contentDocument.body.scrollHeight != frame.height){
-		                frame.height = 0;
-		                frame.height = frame.contentDocument.body.scrollHeight +26;
-		            }
-		        }, 500);
 		    } document.addEventListener("DOMContentLoaded", function(){
 		        var getRq = window.location.search.substr(1);
 		        if(getRq){ if(getRq.split('=')[0]=='page'){
@@ -99,7 +92,7 @@
 		</nav>
 		<hr style="border: 5.5px solid #d2ab66; margin: 0;">
 		<section style="background: #c09955; padding: 1.5%;">
-		    <iframe id="content" src="ihomepage.html" width="100%" frameBorder="0" onload="onLoaded(this);"></iframe>
+		    <iframe id="content" src="ihomepage.html" style="width:1px;min-width:100%;" frameBorder='0' onload="onLoaded(this);"></iframe>
 		</section>
 		<hr style="border: 5.5px solid #d2ab66; margin: 0;">
 		<footer>
@@ -109,5 +102,6 @@
 		    </p>
 		    <p style="text-align:right;">Copyright Стецюк М., Наумчик А. 2022<br>Всі права захищені.</p>
 		</footer>
+		<script>iFrameResize({log: true}, '#content');</script>
 	</body>
 </html>
