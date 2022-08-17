@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>ya_Bob_Jonez</title>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body style="background-color: #e0ffff;">
+		<div class="langs"><a href="index.html">EN</a><a href="ru.html">RU</a><a href="uk.html">UA</a><a href="fr.html">FR</a></div>
+		<section style="text-align:center;">
+			<img src="img/pfp.jpg" class="introImg" />
+			<h1 style="font-family:Arial,sans-serif;font-size:3.2rem;">Michael Stetsiuk</h1>
+			<div><span class="flag"></span> <i>Ukraine</i> <span class="compass"></span> <i>AuthRight</i></div>
+			<table style="border: 1px solid black; margin: 20px auto;"><tbody><tr>
+				<td class="babel-h" style="background-color: #6ef7a7;">UK</td>
+				<td class="babel" style="background-color: #c6fcdc;">Українська мова є рідною.</td>
+				<td class="babel-h" style="background-color: #6ef7a7;">RU</td>
+				<td class="babel" style="background-color: #c6fcdc;">Русский язык есть родным.</td>
+				<td class="babel-h" style="background-color: #99b3ff;">EN-3</td>
+				<td class="babel" style="background-color: #e0e8ff;">An advanced level of English.</td>
+				<td class="babel-h" style="background-color: #c0c8ff;">FR-1</td>
+				<td class="babel" style="background-color: #f0f8ff;">Un niveau élémentaire de français.</td>
+			</tr></tbody></table>
+		</section>
+		<section>
+			<h2>Interests</h2>
+			<div style="display:flex;flex-wrap:wrap;justify-content:center;text-align:center;">
+				<div class="itrs">
+					<img src="img/icon1.png" />
+					<p>Programming</p>
+					<a onclick="itrToggle(3)">More info</a>
+				</div>
+				<div class="itrs">
+					<img src="img/icon2.png" />
+					<p>Linux</p>
+					<a onclick="itrToggle(4)">More info</a>
+				</div>
+				<div class="itrs">
+					<img src="img/icon3.png" />
+					<p>Linguistics</p>
+					<a onclick="itrToggle(5)">More info</a>
+				</div>
+				<div class="itrs">
+					<img src="img/icon4.png" />
+					<p>"WarriorS"</p>
+					<a onclick="itrToggle(6)">More info</a>
+				</div>
+				<div class="itrs">
+					<img src="img/icon5.png" />
+					<p>Furries</p>
+					<a onclick="itrToggle(7)">More info</a>
+				</div>
+			</div>
+			<div class="itrsPn">My primary hobby (I hope, my profession in the future as well) is Software Engineering. When I was 8, I started to learn Java, though several years later I switched to a RAD-studio <a href="http://develnext.org/">DevelNext</a> and used to work a lot in JPHP, by doing small educational projects. I've tried Python and JavaScript, but I don't really like them. Nowadays, most of the time I work in С++. I've been learning how programming languages work in general and designing my own. At school, I used to write a <a href="https://yabobjonez.github.io/Homework/">Wiki (now, a sort of documentation) about Java</a> for my classmates, when we learned it.</div>
+			<div class="itrsPn">In 2020 I found out what Linux is, and did <a href="https://en.wikipedia.org/wiki/Linux_distribution#Tools_for_choosing_a_distribution">distro-hopping</a> to find the most fitting distro out-of-the-box — for me it was <a href="https://ubuntubudgie.org/">Ubuntu Budgie</a>. I've gotten to understand various Linux-related terms, components, etc. I used to carry to my school a <a href="https://en.wikipedia.org/wiki/Live_USB">live USB</a> with that distro on it. I still actively use it at home since the beginning of 2022, however, I also work with the stripped Debian (<a href="https://wiki.debian.org/Debootstrap">debootstrap</a>). I'm going to switch to <a href="https://kde.org/plasma-desktop/">KDE Plasma</a> in some distant future.<br>Linux isn't scary, it's just powerful. That's like a myriad of free (libre and gratis), customizable, simple, and advanced OSs for everyone. Android is also based on Linux ;)</div>
+			<div class="itrsPn">When I have spare time, I learn how human languages work as well; that includes phonetics (sounds), morphology (words), syntax (sentences), and other sciences. Believe me or not, that's not that easy: one should understand all those tenses, aspects, moods, affixes, and so on — and that's only verbs. I've been creating my own <a href="https://en.wikipedia.org/wiki/Constructed_language">conlang</a>, but it doesn't have any words yet and is unnamed.</div>
+			<div class="itrsPn">Some day, in October or November of 2017 my friend (and a former classmate) brought to school some book by <a href="https://en.wikipedia.org/wiki/Erin_Hunter">Erin Hunter</a> (I don't exactly remember which one). I asked him, what was it, and then skimmed through random words. I concluded that it was either weird or childish, although the next day I became so curious to bring a copy of one of the <a href="https://warriors.fandom.com/wiki/Warriors_books">"WarriorS"</a> books (in Russian) and started reading it together with him "just for fun". After I had finished the Prologue and two chapters, I actually became a fan. From that day forward, in a couple of weeks I had already finished a whole <a href="https://en.wikipedia.org/wiki/List_of_literary_cycles">arc</a> (6 books). At the moment, I've read <i>71</i> books (9 of them are mangas though). I participate in the Warrior Cats fandom to this day.<br>Well, there are 1378 characters, dead or alive x)</div>
+			<div class="itrsPn">People that are interested in anthropomorphic animals (and such characters) are typically called <a href="https://en.wikipedia.org/wiki/Furry_fandom">furries</a>. It's a massive and friendly, diverse and unique fandom, which I consider myself a part of, even though I don't actively do anything. And yes, I have a <a href="https://en.wikipedia.org/wiki/Fursona">fursona</a>, which is shown at the top of this page where a photo should have been. If don't know who furries are and what they do, you may be interested in checking out my classmate's and my school web-development project, a website about furries: <a href="https://yabobjonez.github.io/fluff/">site [uk]</a>.</div>
+			<script>
+			function itrToggle(n){
+				for(var i = 3; i < 8; i++) document.querySelector('.itrsPn:nth-child('+i+')').style.display = "none";
+				document.querySelector('.itrsPn:nth-child('+n+')').style.display = "block";
+			}
+			</script>
+		</section>
+		<section>
+			<h2>Проекты</h2>
+			<div class="proj">
+				<img src="img/proj1.png" />
+				<div><b>CtPI</b><hr><p>A graphical application that generates an colored pixels image out of a text, and decodes such images. Color-codes are defined in the configuration file. PNG, JPEG, GIF formats are supported; transparent spacing option is included.</p></div>
+				<p>Practically CC BY-NC-SA 4.0</p>
+				<a href="https://github.com/yaBobJonez/CtPI/releases/download/v1.0.0/CtPI.exe">Windows<br>(EXE)</a>
+				<a href="https://github.com/yaBobJonez/CtPI/releases/download/v1.0.0/CtPI.jar">JAR</a>
+			</div>
+			<div class="proj">
+				<img src="img/proj2.png" />
+				<div><b>iPear XS</b><hr><p>A smartphone simulator that can make calls, control ur PC, solve math assignment (F), browse Reddit, listen da tracks, <s>vertaal wat tekst</s>, forecast tacos, and a lot more! This ugly customizable Walmart phone also steals all your data :D</p><p><i>Impossible to port to other OSs due to the dependency.</i></p></div>
+				<p>Practically CC BY-NC-SA 4.0</p>
+				<a href="https://github.com/yaBobJonez/iPear/releases/download/v1.0.1/iPear.exe">Windows<br>(EXE)</a>
+			</div>
+			<div class="proj">
+				<img src="img/proj4.png" />
+				<div><b>yaWeather</b><hr><p>A simple weather software that works with over 300,000 cities over the world, shows the forecast for every 3 hours 5 days ahead. You can check the temperature, atmospheric pressure, humidity, wind speed and direction, and a big detailed description of the current weather. Imperial, metric, and SI units are supported.</p><p>This project has participated in "iTalent" competition, season 7, junior Software engineering (5th place).</p></div>
+				<p>Practically CC BY-NC-SA 4.0</p>
+				<a href="https://github.com/yaBobJonez/yaWeather/releases/download/v2.1/yaWeather_2-1.exe">Windows<br>(EXE)</a>
+				<a href="https://github.com/yaBobJonez/yaWeather/releases/download/v2.1/yaWeather_2-1.jar">JAR</a>
+			</div>
+			<div class="proj">
+				<img src="img/proj6.png" />
+				<div><b>RevHub</b><hr><p>(Formerly 10AHub) Initially, this project used to be the website of 10/11-А grade at my school, where I published some useful info for my classmates and the dynamic schedule. At the moment, it has been overhauled and translated into Ukrainian. The main topic of the site is a pretty complete yet understandable for non-programmers Java course with real-life examples; written by me.</p><p>The repo itself contains all the Java (10th grade) and Python (11th grade) assignments available in the public domain.</p></div>
+				<p>CC BY-NC-SA 4.0 (site)<br>Unlicense (repo)</p>
+				<a href="https://yabobjonez.github.io/Homework/">Website</a>
+				<a href="https://github.com/yaBobJonez/Homework">Repo</a>
+			</div>
+			<div class="proj">
+				<img src="img/proj7.png" />
+				<div><b>Друга зміна</b><hr><p>A FNAF-like jokish 3D game, centered around my school. Featuring: Soviet fire alarm, crappy flashlight, 2003 CCTV, absence of ventilation, loud canteen door, faulty lighting, and "elementary" math. Our beautiful teachers and 6 secrets are included, of course. Made in 16 days using the Godot engine.</p><p>Not freely available because of the privacy reasons, but may be provided upon request ;)</p></div>
+				<p>Copyright</p>
+				<a href=" mailto:yaBobJonez@gmail.com?subject=FNAS3%20Access%20Request&body=Enter%20your%20contact%20information%20and%20online%20hours%20so%20I%20can%20open%20the%20file%20server%20on%20that%20time%20and%20send%20you%20the%20direct%20download%20links.%0D%0A%0D%0AEntrez%20vos%20contacts%20et%20vos%20heures%20de%20disponibilit%C3%A9%20afin%20que%20je%20puisse%20ouvrir%20le%20serveur%20de%20fichiers%20%C3%A0%20cette%20heure%20et%20vous%20envoyer%20les%20liens%20de%20t%C3%A9l%C3%A9chargement%20direct.%0D%0A%0D%0A%D0%92%D0%B2%D0%B5%D0%B4%D0%B8%D1%82%D0%B5%20%D1%81%D0%B2%D0%BE%D0%B8%20%D0%BA%D0%BE%D0%BD%D1%82%D0%B0%D0%BA%D1%82%D1%8B%20%D0%B8%20%D0%B2%D1%80%D0%B5%D0%BC%D1%8F%2C%20%D0%BA%D0%BE%D0%B3%D0%B4%D0%B0%20%D0%92%D1%8B%20%D0%BE%D0%BD%D0%BB%D0%B0%D0%B9%D0%BD%2C%20%D1%87%D1%82%D0%BE%D0%B1%D1%8B%20%D1%8F%20%D0%BC%D0%BE%D0%B3%20%D0%BE%D1%82%D0%BA%D1%80%D1%8B%D1%82%D1%8C%20%D1%84%D0%B0%D0%B9%D0%BB%D0%BE%D0%B2%D1%8B%D0%B9%20%D1%81%D0%B5%D1%80%D0%B2%D0%B5%D1%80%20%D0%B2%20%D1%8D%D1%82%D0%BE%20%D0%B2%D1%80%D0%B5%D0%BC%D1%8F%20%D0%B8%20%D0%BE%D1%82%D0%BF%D1%80%D0%B0%D0%B2%D0%B8%D1%82%D1%8C%20%D0%B2%D0%B0%D0%BC%20%D0%BF%D1%80%D1%8F%D0%BC%D1%8B%D0%B5%20%D1%81%D1%81%D1%8B%D0%BB%D0%BA%D0%B8%20%D0%B4%D0%BB%D1%8F%20%D1%81%D0%BA%D0%B0%D1%87%D0%B8%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F.%0D%0A%0D%0A%D0%92%D0%B2%D0%B5%D0%B4%D1%96%D1%82%D1%8C%20%D1%81%D0%B2%D0%BE%D1%97%20%D0%BA%D0%BE%D0%BD%D1%82%D0%B0%D0%BA%D1%82%D0%B8%20%D1%82%D0%B0%20%D1%87%D0%B0%D1%81%2C%20%D0%BA%D0%BE%D0%BB%D0%B8%20%D0%92%D0%B8%20%D0%BE%D0%BD%D0%BB%D0%B0%D0%B9%D0%BD%2C%20%D1%89%D0%BE%D0%B1%20%D1%8F%20%D0%BC%D1%96%D0%B3%20%D0%B2%D1%96%D0%B4%D0%BA%D1%80%D0%B8%D1%82%D0%B8%20%D1%84%D0%B0%D0%B9%D0%BB%D0%BE%D0%B2%D0%B8%D0%B9%20%D1%81%D0%B5%D1%80%D0%B2%D0%B5%D1%80%20%D1%83%20%D1%86%D0%B5%D0%B9%20%D1%87%D0%B0%D1%81%20%D1%96%20%D0%BD%D0%B0%D0%B4%D1%96%D1%81%D0%BB%D0%B0%D1%82%D0%B8%20%D0%B2%D0%B0%D0%BC%20%D0%BF%D1%80%D1%8F%D0%BC%D1%96%20%D0%BF%D0%BE%D1%81%D0%B8%D0%BB%D0%B0%D0%BD%D0%BD%D1%8F%20%D0%B4%D0%BB%D1%8F%20%D0%B7%D0%B0%D0%B2%D0%B0%D0%BD%D1%82%D0%B0%D0%B6%D0%B5%D0%BD%D0%BD%D1%8F. ">Request access</a>
+			</div>
+			<div class="proj">
+				<div style="flex-grow:1;"><b>The language</b><hr><p>My (currently) unnamed conglang in active development: agglutinative Romance, nominative-accusative, SVO.</p></div>
+				<a href="https://docs.google.com/document/d/1M_lh5BJadee1Dsq34bDH0auTkRq19POkDPkgwKyAj1s/edit?usp=sharing">Full desc</a>
+				<a href="https://docs.google.com/spreadsheets/d/1-KXzp2vihWZLy5v3votM5lPppT3hfqzOCOX1Tn7gnL0/edit?usp=sharing">Vocab/tools</a>
+			</div>
+			<div class="proj">
+				<div style="flex-grow:1;"><b>Chime</b><hr><p>A contemporary programming language (currently being both designed and implemented). No more information should be disclosed at the moment.</p></div>
+				<p style="flex-grow:0;color:red;font-weight:bold;">Trade secret</p>
+			</div>
+			<div class="proj">
+				<img src="img/proj5.png" />
+				<div><b>NIT</b><hr><p><i>No longer developed, but this can change in the future.</i></p><p>A GUI library with a custom theme based on Java Swing. Supports enough controls to create simple applications with it. Source code only provided for educational purposes.</p></div>
+				<p style="color:red;font-weight:bold;">Copyright</p>
+				<a href="https://github.com/yaBobJonez/NIT">Source</a>
+			</div>
+			<div class="proj">
+				<img src="img/proj3.png" />
+				<div><b>yaMedicAid</b><hr><p><i>No longer developed, but this can change in the future.</i></p><p>A documentation medicine-related website that should have had information about medical equipment, drugs, treatment and diagnostics, common illnesses, first aid, and ECG/EKG.</p></div>
+				<p>MPL-2.0</p>
+				<a href="https://yabobjonez.github.io/FirstAid/">Visit</a>
+			</div>
+		</section>
+		<section>
+			<h2>Knowledge (self-assessed)</h2>
+			<div style="display:flex;flex-wrap:wrap; --pgc: #ffaa00;"><div style="flex-basis:auto;flex-grow:1;margin:0 4%;">
+				<div class="pb">
+					<p>Math</p><p>8.0</p>
+					<div style="--pgf: 80%; --pgp: 0%;">&nbsp;</div>
+				</div>
+				<div class="pb">
+					<p>English</p><p>8.5</p>
+					<div style="--pgf: 79%; --pgp: 6%;">&nbsp;</div>
+				</div>
+				<div class="pb">
+					<p>CS</p><p>9.4</p>
+					<div style="--pgf: 94%; --pgp: 2%;">&nbsp;</div>
+				</div>
+				<div class="pb">
+					<p>Geography</p><p>7.2</p>
+					<div style="--pgf: 72%; --pgp: 0%;">&nbsp;</div>
+				</div>
+				<div class="pb">
+					<p>Physics</p><p>5.8</p>
+					<div style="--pgf: 58%; --pgp: 0%;">&nbsp;</div>
+				</div>
+				<div class="pb">
+					<p>Art</p><p>3.6</p>
+					<div style="--pgf: 36%; --pgp: 2%;">&nbsp;</div>
+				</div>
+			</div><div style="flex-basis:auto;flex-grow:1;margin:0 4%;">
+				<div class="pb">
+					<p>Українська мова</p><p>8.4</p>
+					<div style="--pgf: 84%; --pgp: 0%;">&nbsp;</div>
+				</div>
+				<div class="pb">
+					<p>Ukr. literature</p><p>3.1</p>
+					<div style="--pgf: 29%; --pgp: 2%;">&nbsp;</div>
+				</div>
+				<div class="pb">
+					<p>Foreign liter.</p><p>4.2</p>
+					<div style="--pgf: 42%; --pgp: 0%;">&nbsp;</div>
+				</div>
+				<div class="pb">
+					<p>Biology</p><p>4.0</p>
+					<div style="--pgf: 40%; --pgp: 0%;">&nbsp;</div>
+				</div>
+				<div class="pb">
+					<p>Chemisty</p><p>6.2</p>
+					<div style="--pgf: 62%; --pgp: 0%;">&nbsp;</div>
+				</div>
+				<div class="pb">
+					<p>Music</p><p>8.6</p>
+					<div style="--pgf: 83%; --pgp: 3%;">&nbsp;</div>
+				</div>
+			</div><div style="flex-basis:auto;flex-grow:1;margin:0 4%;">
+				<div class="pb">
+					<p>Ukr. history</p><p>2.6</p>
+					<div style="--pgf: 26%; --pgp: 30%;">&nbsp;</div>
+				</div>
+				<div class="pb">
+					<p>World history</p><p>3.7</p>
+					<div style="--pgf: 37%; --pgp: 2%;">&nbsp;</div>
+				</div>
+				<div class="pb">
+					<p>Русский язык</p><p>7.2</p>
+					<div style="--pgf: 72%; --pgp: 1%;">&nbsp;</div>
+				</div>
+				<div class="pb">
+					<p>Rus. literature</p><p>3.5</p>
+					<div style="--pgf: 33%; --pgp: 2%;">&nbsp;</div>
+				</div>
+				<div class="pb">
+					<p>Astronomy</p><p>6.0</p>
+					<div style="--pgf: 60%; --pgp: 0%;">&nbsp;</div>
+				</div>
+				<div class="pb">
+					<p>Law</p><p>8.3</p>
+					<div style="--pgf: 81%; --pgp: 2%;">&nbsp;</div>
+				</div>
+			</div></div>
+		</section>
+		<section>
+			<h2>Character traits</h2>
+			<div style="display:flex;flex-wrap:wrap; --pgc: #32cd32;"><div style="flex-basis:auto;flex-grow:1;margin:0 2%;">
+				<div class="pbv">
+					<p>Aggressiveness</p>
+					<div style="--pgf: 7%; --pgp: 0%;">&nbsp;</div>
+					<p>0.7</p>
+				</div>
+				<div class="pbv">
+					<p>Envy</p>
+					<div style="--pgf: 30%; --pgp: 2%;">&nbsp;</div>
+					<p>3.2</p>
+				</div>
+				<div class="pbv">
+					<p>Narcissism</p>
+					<div style="--pgf: 2%; --pgp: 0%;">&nbsp;</div>
+					<p>0.2</p>
+				</div>
+				<div class="pbv">
+					<p>Modesty</p>
+					<div style="--pgf: 66%; --pgp: 2%;">&nbsp;</div>
+					<p>6.8</p>
+				</div>
+				<div class="pbv">
+					<p>Charisma</p>
+					<div style="--pgf: 54%; --pgp: 0%;">&nbsp;</div>
+					<p>5.4</p>
+				</div>
+			</div><div style="flex-basis:auto;flex-grow:1;margin:0 2%;">
+				<div class="pbv">
+					<p>Ambition</p>
+					<div style="--pgf: 12%; --pgp: 5%;">&nbsp;</div>
+					<p>1.2</p>
+				</div>
+				<div class="pbv">
+					<p>Talkativity</p>
+					<div style="--pgf: 22%; --pgp: 3%;">&nbsp;</div>
+					<p>2.2</p>
+				</div>
+				<div class="pbv">
+					<p>Optimism</p>
+					<div style="--pgf: 89%; --pgp: 0%;">&nbsp;</div>
+					<p>8.9</p>
+				</div>
+				<div class="pbv">
+					<p>Sympathy</p>
+					<div style="--pgf: 7%; --pgp: 0%;">&nbsp;</div>
+					<p>0.7</p>
+				</div>
+				<div class="pbv">
+					<p>Courage</p>
+					<div style="--pgf: 10%; --pgp: 0%;">&nbsp;</div>
+					<p>1.0</p>
+				</div>
+			</div><div style="flex-basis:auto;flex-grow:1;margin:0 2%;">
+				<div class="pbv">
+					<p>Impartiality</p>
+					<div style="--pgf: 78%; --pgp: 0%;">&nbsp;</div>
+					<p>7.8</p>
+				</div>
+				<div class="pbv">
+					<p>Conformity</p>
+					<div style="--pgf: 93%; --pgp: 3%;">&nbsp;</div>
+					<p>9.3</p>
+				</div>
+				<div class="pbv">
+					<p>Determination</p>
+					<div style="--pgf: 72%; --pgp: 6%;">&nbsp;</div>
+					<p>7.2</p>
+				</div>
+				<div class="pbv">
+					<p>Patience</p>
+					<div style="--pgf: 68%; --pgp: 0%;">&nbsp;</div>
+					<p>6.8</p>
+				</div>
+				<div class="pbv">
+					<p>Cynicism</p>
+					<div style="--pgf: 9%; --pgp: 0%;">&nbsp;</div>
+					<p>0.9</p>
+				</div>
+			</div><div style="flex-basis:auto;flex-grow:1;margin:0 2%;">
+				<div class="pbv">
+					<p>Politeness</p>
+					<div style="--pgf: 94%; --pgp: 0%;">&nbsp;</div>
+					<p>9.4</p>
+				</div>
+				<div class="pbv">
+					<p>Criticism</p>
+					<div style="--pgf: 20%; --pgp: 7%;">&nbsp;</div>
+					<p>2.0</p>
+				</div>
+				<div class="pbv">
+					<p>Perfectionism</p>
+					<div style="--pgf: 73%; --pgp: 14%;">&nbsp;</div>
+					<p>8.7</p>
+				</div>
+				<div class="pbv">
+					<p>Tolerancy</p>
+					<div style="--pgf: 91%; --pgp: 0%;">&nbsp;</div>
+					<p>9.1</p>
+				</div>
+				<div class="pbv">
+					<p>Honesty</p>
+					<div style="--pgf: 83%; --pgp: 0%;">&nbsp;</div>
+					<p>8.3</p>
+				</div>
+			</div><div style="flex-basis:auto;flex-grow:1;margin:0 2%;">
+				<div class="pbv">
+					<p>Insolence</p>
+					<div style="--pgf: 8%; --pgp: 1%;">&nbsp;</div>
+					<p>0.8</p>
+				</div>
+				<div class="pbv">
+					<p>Mercy</p>
+					<div style="--pgf: 85%; --pgp: 0%;">&nbsp;</div>
+					<p>8.5</p>
+				</div>
+				<div class="pbv">
+					<p>Punctuality</p>
+					<div style="--pgf: 32%; --pgp: 7%;">&nbsp;</div>
+					<p>3.2</p>
+				</div>
+				<div class="pbv">
+					<p>Anxiety</p>
+					<div style="--pgf: 24%; --pgp: 0%;">&nbsp;</div>
+					<p>2.4</p>
+				</div>
+				<div class="pbv">
+					<p>Generosity</p>
+					<div style="--pgf: 67%; --pgp: 7%;">&nbsp;</div>
+					<p>7.4</p>
+				</div>
+			</div><div style="flex-basis:auto;flex-grow:1;margin:0 2%;">
+				<div class="pbv">
+					<p>Friendliness</p>
+					<div style="--pgf: 86%; --pgp: 4%;">&nbsp;</div>
+					<p>8.6</p>
+				</div>
+				<div class="pbv">
+					<p>Reliability</p>
+					<div style="--pgf: 62%; --pgp: 0%;">&nbsp;</div>
+					<p>6.2</p>
+				</div>
+				<div class="pbv">
+					<p>Self-control</p>
+					<div style="--pgf: 96%; --pgp: 0%;">&nbsp;</div>
+					<p>9.6</p>
+				</div>
+				<div class="pbv">
+					<p>Confidence</p>
+					<div style="--pgf: 65%; --pgp: 8%;">&nbsp;</div>
+					<p>6.5</p>
+				</div>
+				<div class="pbv">
+					<p>Egocentrism</p>
+					<div style="--pgf: 31%; --pgp: 0%;">&nbsp;</div>
+					<p>3.2</p>
+				</div>
+			</div></div>
+		</section>
+	</body>
+</html>

@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>ya_Bob_Jonez</title>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body style="background-color: #e0ffff;">
+		<div class="langs"><a href="index.html">EN</a><a href="ru.html">RU</a><a href="uk.html">UA</a><a href="fr.html">FR</a></div>
+		<section style="text-align:center;">
+			<img src="img/pfp.jpg" class="introImg" />
+			<h1 style="font-family:Arial,sans-serif;font-size:3.2rem;">Михайло Стецюк</h1>
+			<div><span class="flag"></span> <i>Україна</i> <span class="compass"></span> <i>Правий Авторитарний</i></div>
+			<table style="border: 1px solid black; margin: 20px auto;"><tbody><tr>
+				<td class="babel-h" style="background-color: #6ef7a7;">UK</td>
+				<td class="babel" style="background-color: #c6fcdc;">Українська мова є рідною.</td>
+				<td class="babel-h" style="background-color: #6ef7a7;">RU</td>
+				<td class="babel" style="background-color: #c6fcdc;">Русский язык есть родным.</td>
+				<td class="babel-h" style="background-color: #99b3ff;">EN-3</td>
+				<td class="babel" style="background-color: #e0e8ff;">An advanced level of English.</td>
+				<td class="babel-h" style="background-color: #c0c8ff;">FR-1</td>
+				<td class="babel" style="background-color: #f0f8ff;">Un niveau élémentaire de français.</td>
+			</tr></tbody></table>
+		</section>
+		<section>
+			<h2>Інтереси</h2>
+			<div style="display:flex;flex-wrap:wrap;justify-content:center;text-align:center;">
+				<div class="itrs">
+					<img src="img/icon1.png" />
+					<p>Програмування</p>
+					<a onclick="itrToggle(3)">Детальніше</a>
+				</div>
+				<div class="itrs">
+					<img src="img/icon2.png" />
+					<p>Linux</p>
+					<a onclick="itrToggle(4)">Детальніше</a>
+				</div>
+				<div class="itrs">
+					<img src="img/icon3.png" />
+					<p>Лінгвістика</p>
+					<a onclick="itrToggle(5)">Детальніше</a>
+				</div>
+				<div class="itrs">
+					<img src="img/icon4.png" />
+					<p>"Коти-Вояки"</p>
+					<a onclick="itrToggle(6)">Детальніше</a>
+				</div>
+				<div class="itrs">
+					<img src="img/icon5.png" />
+					<p>Фурі</p>
+					<a onclick="itrToggle(7)">Детальніше</a>
+				</div>
+			</div>
+			<div class="itrsPn">Моє основне хобі (сподіваюся, у майбутньому й професія) це інженерія програмного забезпечення. У 8 років я почав цікавитися мовою Java, а через декілька років перейшов на RAD-студію <a href="http://develnext.org/">DevelNext</a> та довго працював з JPHP, робив невеликі проєкти для практики. Пробував Python, JavaScript, хоча не дуже їх полюбляю. Зараз більшу частину часу працюю на С++. Вивчаю, як в цілому влаштовані мови програмування, розробляю дизайн своєї власної. У школі писав для однокласників <a href="https://yabobjonez.github.io/Homework/">Вікі (зараз документація) про Java</a> коли ми її вивчали.</div>
+			<div class="itrsPn">У 2020 році я вирішив дізнатися про Linux, займався <a href="https://en.wikipedia.org/wiki/Linux_distribution#Tools_for_choosing_a_distribution">distro-hopping</a>'ом, щоб знати найбільш зручний дистро "із коробки" — для мене це був <a href="https://ubuntubudgie.org/">Ubuntu Budgie</a>. Я достатньо розібрався із поняттями, екосистемою, компонентами тощо. Постійно носив до школи <a href="https://uk.wikipedia.org/wiki/Live_USB">live USB</a> з цим дистрибутивом, активно використовував. На початку 2022 вдома повністю перейшов на Ubuntu Budgie 21.10, але також працюю з мінімальним Debian (<a href="https://wiki.debian.org/Debootstrap">debootstrap</a>). Планую перейти на <a href="https://kde.org/uk/plasma-desktop/">KDE Plasma</a>, але не дуже скоро.<br>Linux не страшний, а просто потужний. Це як тисячі безкоштовних, відкритих, простих або функціональних ОС на будь-який смак. Android також створений на базі Linux ;)</div>
+			<div class="itrsPn">У вільний час я цікавлюсь та вивчаю, як влаштовані людські мови; себто фонетику (звуки), морфологію (слова), синтаксис (речення) та інші науки. Повірте, це досить складно, хоча здається простим: треба знати аспекти, часи, способи, афікси — і це лише дієслова. Намагаюсь створити свою <a href="https://uk.wikipedia.org/wiki/%D0%A8%D1%82%D1%83%D1%87%D0%BD%D0%B0_%D0%BC%D0%BE%D0%B2%D0%B0">штучну мову</a>, поки формую лише граматику, тому слів у ній немає, як і назви.</div>
+			<div class="itrsPn">Одного разу, у жовтні-листопаді 2017 мій друг (колишній однокласник) приніс до школи книгу від <a href="https://uk.wikipedia.org/wiki/%D0%95%D1%80%D1%96%D0%BD_%D0%93%D0%B0%D0%BD%D1%82%D0%B5%D1%80">Ерін Гантер</a> (не пам'ятаю яку) і я спитав що це. Швидко переглянув рандомні слова, зробив висновок, що це якась маячня або дитяча казка, однак на наступний день допитливість перемогла і я приніс першу книгу з деякої серії <a href="https://uawarriors.fandom.com/uk/wiki/%D0%93%D0%BE%D0%BB%D0%BE%D0%B2%D0%BD%D0%B0_%D1%81%D1%82%D0%BE%D1%80%D1%96%D0%BD%D0%BA%D0%B0">"Коти-Вояки"</a> (російською) та став читати на перервах з ним, "для угара". Вже після пролога і двох глав, реально зацікавився. З того часу, за декілька тижнів я прочитав весь перший <a href="https://uk.wikipedia.org/wiki/%D0%9B%D1%96%D1%82%D0%B5%D1%80%D0%B0%D1%82%D1%83%D1%80%D0%BD%D0%B8%D0%B9_%D1%86%D0%B8%D0%BA%D0%BB">цикл</a> (6 книг). Наразі я вже прочитав <i>71</i> книгу (з них 9 — манги, решта — власне книги). Вважаю себе частиною фендому КВ, беру участь у дискусіях.<br>І ще, у них всього 1378 персонажів, живих чи мертвих x)</div>
+			<div class="itrsPn"><a href="https://uk.wikipedia.org/wiki/%D0%A4%D1%83%D1%80%D1%96">Фурями</a> називають людей, які цікавляться антропоморфними тваринами, а також таких персонажів. Це гігантський і дружелюбний, різноманітний і унікальний фендом, частиною якого я себе вважаю, хоча й не беру у ньому активної участі. Так, у мене є своя <a href="https://uk.wikifur.com/wiki/%D0%A4%D1%83%D1%80%D1%81%D0%BE%D0%BD%D0%B0">фурсона</a>, яка зображена замість фото вгорі сторінки. Хто знає, хто такі фурі, той знає, а кому цікаво, можете переглянути мій та мого однокласника шкільний проєкт з теми веброзробки (точніше, створення сайтів) про фурі: <a href="https://yabobjonez.github.io/fluff/">сайт [uk]</a>.</div>
+			<script>
+			function itrToggle(n){
+				for(var i = 3; i < 8; i++) document.querySelector('.itrsPn:nth-child('+i+')').style.display = "none";
+				document.querySelector('.itrsPn:nth-child('+n+')').style.display = "block";
+			}
+			</script>
+		</section>
+		<section>
+			<h2>Проєкти</h2>
+			<div class="proj">
+				<img src="img/proj1.png" />
+				<div><b>CtPI</b><hr><p>Графічна програма, яка генерує зображення з різнокольорових пікселів на основі введеного тексту і навпаки. Комбінації символ-колір визначаються у файлі конфігурації. Підтримуються PNG, JPEG, GIF формати, є можливість робити прозорі відступи між пікселями.</p></div>
+				<p>На практиці CC BY-NC-SA 4.0</p>
+				<a href="https://github.com/yaBobJonez/CtPI/releases/download/v1.0.0/CtPI.exe">Windows<br>(EXE)</a>
+				<a href="https://github.com/yaBobJonez/CtPI/releases/download/v1.0.0/CtPI.jar">JAR</a>
+			</div>
+			<div class="proj">
+				<img src="img/proj2.png" />
+				<div><b>iPear XS</b><hr><p>Симулятор смартфона, який може дзвонити (да ладна), керувати компом, рахувать КР по матеші, чекати Реддіт, слухати музон, <s>vertaal wat tekst</s>, дивитись погоду та ще багато чого! Кастомізабельний вбогий телефон із Сєльпо також краде всі Ваші дані :D</p><p><i>Не портабельний на інші ОС через бібліотеку.</i></p></div>
+				<p>На практиці CC BY-NC-SA 4.0</p>
+				<a href="https://github.com/yaBobJonez/iPear/releases/download/v1.0.1/iPear.exe">Windows<br>(EXE)</a>
+			</div>
+			<div class="proj">
+				<img src="img/proj4.png" />
+				<div><b>yaWeather</b><hr><p>Програма для перегляду погоди у більш ніж 300,000 містах світу, з прогнозом на кожні 3 години на 5 днів. Показує температуру, тиск, вологість, швидкість та напрям вітру, а також надає детальний опис. Можливо вибирати між імперськими, метричними і СІ одиницями.</p><p>Цей проєкт був учасником конкурсу iTalent 7 сезону у молодшій категорії Програмної розробки (5 місце).</p></div>
+				<p>На практиці CC BY-NC-SA 4.0</p>
+				<a href="https://github.com/yaBobJonez/yaWeather/releases/download/v2.1/yaWeather_2-1.exe">Windows<br>(EXE)</a>
+				<a href="https://github.com/yaBobJonez/yaWeather/releases/download/v2.1/yaWeather_2-1.jar">JAR</a>
+			</div>
+			<div class="proj">
+				<img src="img/proj6.png" />
+				<div><b>RevHub</b><hr><p>(Раніше 10AHub) Спочатку створений як сайт 10/11-А класу моєї школи, де була різна корисна для однокласниів інформація і динамічний розклад. Зараз значно покращений і перекладений українською мовою. Основною темою сайту є достатньо повний курс Java для не-програмістів з прикладами із реального життя, написаний мною.</p><p>Сам репозиторій також містить всі шкільні задачі на Java (10 клас) та Python (11 клас) у суспільному надбанні.</p></div>
+				<p>CC BY-NC-SA 4.0 (сайт)<br>Unlicense (репо)</p>
+				<a href="https://yabobjonez.github.io/Homework/">Сайт</a>
+				<a href="https://github.com/yaBobJonez/Homework">Репо</a>
+			</div>
+			<div class="proj">
+				<img src="img/proj7.png" />
+				<div><b>Друга зміна</b><hr><p>Жартівлива 3D-гра, схожа на FNAF, присвячена моїй школі. Містить: радянську пожежну сигналізацію, кепський ліхтарик, камери 2003 року, відсутність вентиляції, гучні двері їдальні, несправне освітлення та «елементарну» математику. Наші прекрасні вчителі і 6 пасхалок, звичайно, включені. Зроблено за 16 днів за допомогою рушія Godot.</p><p>Не доступний у вільному доступі з міркувань конфіденційності, але може бути наданий за запитом ;)</p></div>
+				<p>Копірайт</p>
+				<a href=" mailto:yaBobJonez@gmail.com?subject=FNAS3%20Access%20Request&body=Enter%20your%20contact%20information%20and%20online%20hours%20so%20I%20can%20open%20the%20file%20server%20on%20that%20time%20and%20send%20you%20the%20direct%20download%20links.%0D%0A%0D%0AEntrez%20vos%20contacts%20et%20vos%20heures%20de%20disponibilit%C3%A9%20afin%20que%20je%20puisse%20ouvrir%20le%20serveur%20de%20fichiers%20%C3%A0%20cette%20heure%20et%20vous%20envoyer%20les%20liens%20de%20t%C3%A9l%C3%A9chargement%20direct.%0D%0A%0D%0A%D0%92%D0%B2%D0%B5%D0%B4%D0%B8%D1%82%D0%B5%20%D1%81%D0%B2%D0%BE%D0%B8%20%D0%BA%D0%BE%D0%BD%D1%82%D0%B0%D0%BA%D1%82%D1%8B%20%D0%B8%20%D0%B2%D1%80%D0%B5%D0%BC%D1%8F%2C%20%D0%BA%D0%BE%D0%B3%D0%B4%D0%B0%20%D0%92%D1%8B%20%D0%BE%D0%BD%D0%BB%D0%B0%D0%B9%D0%BD%2C%20%D1%87%D1%82%D0%BE%D0%B1%D1%8B%20%D1%8F%20%D0%BC%D0%BE%D0%B3%20%D0%BE%D1%82%D0%BA%D1%80%D1%8B%D1%82%D1%8C%20%D1%84%D0%B0%D0%B9%D0%BB%D0%BE%D0%B2%D1%8B%D0%B9%20%D1%81%D0%B5%D1%80%D0%B2%D0%B5%D1%80%20%D0%B2%20%D1%8D%D1%82%D0%BE%20%D0%B2%D1%80%D0%B5%D0%BC%D1%8F%20%D0%B8%20%D0%BE%D1%82%D0%BF%D1%80%D0%B0%D0%B2%D0%B8%D1%82%D1%8C%20%D0%B2%D0%B0%D0%BC%20%D0%BF%D1%80%D1%8F%D0%BC%D1%8B%D0%B5%20%D1%81%D1%81%D1%8B%D0%BB%D0%BA%D0%B8%20%D0%B4%D0%BB%D1%8F%20%D1%81%D0%BA%D0%B0%D1%87%D0%B8%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F.%0D%0A%0D%0A%D0%92%D0%B2%D0%B5%D0%B4%D1%96%D1%82%D1%8C%20%D1%81%D0%B2%D0%BE%D1%97%20%D0%BA%D0%BE%D0%BD%D1%82%D0%B0%D0%BA%D1%82%D0%B8%20%D1%82%D0%B0%20%D1%87%D0%B0%D1%81%2C%20%D0%BA%D0%BE%D0%BB%D0%B8%20%D0%92%D0%B8%20%D0%BE%D0%BD%D0%BB%D0%B0%D0%B9%D0%BD%2C%20%D1%89%D0%BE%D0%B1%20%D1%8F%20%D0%BC%D1%96%D0%B3%20%D0%B2%D1%96%D0%B4%D0%BA%D1%80%D0%B8%D1%82%D0%B8%20%D1%84%D0%B0%D0%B9%D0%BB%D0%BE%D0%B2%D0%B8%D0%B9%20%D1%81%D0%B5%D1%80%D0%B2%D0%B5%D1%80%20%D1%83%20%D1%86%D0%B5%D0%B9%20%D1%87%D0%B0%D1%81%20%D1%96%20%D0%BD%D0%B0%D0%B4%D1%96%D1%81%D0%BB%D0%B0%D1%82%D0%B8%20%D0%B2%D0%B0%D0%BC%20%D0%BF%D1%80%D1%8F%D0%BC%D1%96%20%D0%BF%D0%BE%D1%81%D0%B8%D0%BB%D0%B0%D0%BD%D0%BD%D1%8F%20%D0%B4%D0%BB%D1%8F%20%D0%B7%D0%B0%D0%B2%D0%B0%D0%BD%D1%82%D0%B0%D0%B6%D0%B5%D0%BD%D0%BD%D1%8F. ">Запит на доступ</a>
+			</div>
+			<div class="proj">
+				<div style="flex-grow:1;"><b>Мова</b><hr><p>Моя (поки) безіменна штучна мова у розробці: аглютинативна Романська, з номінативним ладом, порядком слів SVO.</p></div>
+				<a href="https://docs.google.com/document/d/1M_lh5BJadee1Dsq34bDH0auTkRq19POkDPkgwKyAj1s/edit?usp=sharing">Повний опис</a>
+				<a href="https://docs.google.com/spreadsheets/d/1-KXzp2vihWZLy5v3votM5lPppT3hfqzOCOX1Tn7gnL0/edit?usp=sharing">Словник/інстр.</a>
+			</div>
+			<div class="proj">
+				<div style="flex-grow:1;"><b>Chime</b><hr><p>Мова програмування в активній розробці (як дизайн, так й імплементація). Більше інформації поки не буду розкривати.</p></div>
+				<p style="flex-grow:0;color:red;font-weight:bold;">Комерційна таємниця</p>
+			</div>
+			<div class="proj">
+				<img src="img/proj5.png" />
+				<div><b>NIT</b><hr><p><i>Проєкт більше не у розробці, але це може змінитися у майбутньому.</i></p><p>Бібліотека GUI з власною темою на базі Java Swing. Підтримує достатньо контролів для створення простих програм. Тільки початковий код для ознайомлення.</p></div>
+				<p style="color:red;font-weight:bold;">Копірайт</p>
+				<a href="https://github.com/yaBobJonez/NIT">Source</a>
+			</div>
+			<div class="proj">
+				<img src="img/proj3.png" />
+				<div><b>yaMedicAid</b><hr><p><i>Проєкт більше не у розробці, але це може змінитися у майбутньому.</i></p><p>Сайт-документація про медицину, який мав містити інформацію про медичні пристрої, ліки, методи лікування і діагностики, найпоширеніші захворювання, першу допомогу й ЕКГ.</p></div>
+				<p>MPL-2.0</p>
+				<a href="https://yabobjonez.github.io/FirstAid/">Перейти</a>
+			</div>
+		</section>
+		<section>
+			<h2>Знання (самооцінка)</h2>
+			<div style="display:flex;flex-wrap:wrap; --pgc: #ffaa00;"><div style="flex-basis:auto;flex-grow:1;margin:0 4%;">
+				<div class="pb">
+					<p>Математика</p><p>8.0</p>
+					<div style="--pgf: 80%; --pgp: 0%;">&nbsp;</div>
+				</div>
+				<div class="pb">
+					<p>English</p><p>8.5</p>
+					<div style="--pgf: 79%; --pgp: 6%;">&nbsp;</div>
+				</div>
+				<div class="pb">
+					<p>Інформатика</p><p>9.4</p>
+					<div style="--pgf: 94%; --pgp: 2%;">&nbsp;</div>
+				</div>
+				<div class="pb">
+					<p>Географія</p><p>7.2</p>
+					<div style="--pgf: 72%; --pgp: 0%;">&nbsp;</div>
+				</div>
+				<div class="pb">
+					<p>Фізика</p><p>5.8</p>
+					<div style="--pgf: 58%; --pgp: 0%;">&nbsp;</div>
+				</div>
+				<div class="pb">
+					<p>Мистецтво</p><p>3.6</p>
+					<div style="--pgf: 36%; --pgp: 2%;">&nbsp;</div>
+				</div>
+			</div><div style="flex-basis:auto;flex-grow:1;margin:0 4%;">
+				<div class="pb">
+					<p>Українська мова</p><p>8.4</p>
+					<div style="--pgf: 84%; --pgp: 0%;">&nbsp;</div>
+				</div>
+				<div class="pb">
+					<p>Українська літ.</p><p>3.1</p>
+					<div style="--pgf: 29%; --pgp: 2%;">&nbsp;</div>
+				</div>
+				<div class="pb">
+					<p>Зарубіжна літ.</p><p>4.2</p>
+					<div style="--pgf: 42%; --pgp: 0%;">&nbsp;</div>
+				</div>
+				<div class="pb">
+					<p>Біологія</p><p>4.0</p>
+					<div style="--pgf: 40%; --pgp: 0%;">&nbsp;</div>
+				</div>
+				<div class="pb">
+					<p>Хімія</p><p>6.2</p>
+					<div style="--pgf: 62%; --pgp: 0%;">&nbsp;</div>
+				</div>
+				<div class="pb">
+					<p>Музика</p><p>8.6</p>
+					<div style="--pgf: 83%; --pgp: 3%;">&nbsp;</div>
+				</div>
+			</div><div style="flex-basis:auto;flex-grow:1;margin:0 4%;">
+				<div class="pb">
+					<p>Історія України</p><p>2.6</p>
+					<div style="--pgf: 26%; --pgp: 30%;">&nbsp;</div>
+				</div>
+				<div class="pb">
+					<p>Всесвітня іст.</p><p>3.7</p>
+					<div style="--pgf: 37%; --pgp: 2%;">&nbsp;</div>
+				</div>
+				<div class="pb">
+					<p>Русский язык</p><p>7.2</p>
+					<div style="--pgf: 72%; --pgp: 1%;">&nbsp;</div>
+				</div>
+				<div class="pb">
+					<p>Російська літ.</p><p>3.5</p>
+					<div style="--pgf: 33%; --pgp: 2%;">&nbsp;</div>
+				</div>
+				<div class="pb">
+					<p>Астрономія</p><p>6.0</p>
+					<div style="--pgf: 60%; --pgp: 0%;">&nbsp;</div>
+				</div>
+				<div class="pb">
+					<p>Правознавство</p><p>8.3</p>
+					<div style="--pgf: 81%; --pgp: 2%;">&nbsp;</div>
+				</div>
+			</div></div>
+		</section>
+		<section>
+			<h2>Характер</h2>
+			<div style="display:flex;flex-wrap:wrap; --pgc: #32cd32;"><div style="flex-basis:auto;flex-grow:1;margin:0 2%;">
+				<div class="pbv">
+					<p>Агресивність</p>
+					<div style="--pgf: 7%; --pgp: 0%;">&nbsp;</div>
+					<p>0.7</p>
+				</div>
+				<div class="pbv">
+					<p>Заздрість</p>
+					<div style="--pgf: 30%; --pgp: 2%;">&nbsp;</div>
+					<p>3.2</p>
+				</div>
+				<div class="pbv">
+					<p>Нарцисизм</p>
+					<div style="--pgf: 2%; --pgp: 0%;">&nbsp;</div>
+					<p>0.2</p>
+				</div>
+				<div class="pbv">
+					<p>Скромність</p>
+					<div style="--pgf: 66%; --pgp: 2%;">&nbsp;</div>
+					<p>6.8</p>
+				</div>
+				<div class="pbv">
+					<p>Харизма</p>
+					<div style="--pgf: 54%; --pgp: 0%;">&nbsp;</div>
+					<p>5.4</p>
+				</div>
+			</div><div style="flex-basis:auto;flex-grow:1;margin:0 2%;">
+				<div class="pbv">
+					<p>Амбіційність</p>
+					<div style="--pgf: 12%; --pgp: 5%;">&nbsp;</div>
+					<p>1.2</p>
+				</div>
+				<div class="pbv">
+					<p>Комунікабел.</p>
+					<div style="--pgf: 22%; --pgp: 3%;">&nbsp;</div>
+					<p>2.2</p>
+				</div>
+				<div class="pbv">
+					<p>Оптимізм</p>
+					<div style="--pgf: 89%; --pgp: 0%;">&nbsp;</div>
+					<p>8.9</p>
+				</div>
+				<div class="pbv">
+					<p>Співчуття</p>
+					<div style="--pgf: 7%; --pgp: 0%;">&nbsp;</div>
+					<p>0.7</p>
+				</div>
+				<div class="pbv">
+					<p>Храбрість</p>
+					<div style="--pgf: 10%; --pgp: 0%;">&nbsp;</div>
+					<p>1.0</p>
+				</div>
+			</div><div style="flex-basis:auto;flex-grow:1;margin:0 2%;">
+				<div class="pbv">
+					<p>Неупередженість</p>
+					<div style="--pgf: 78%; --pgp: 0%;">&nbsp;</div>
+					<p>7.8</p>
+				</div>
+				<div class="pbv">
+					<p>Конформність</p>
+					<div style="--pgf: 93%; --pgp: 3%;">&nbsp;</div>
+					<p>9.3</p>
+				</div>
+				<div class="pbv">
+					<p>Рішучість</p>
+					<div style="--pgf: 72%; --pgp: 6%;">&nbsp;</div>
+					<p>7.2</p>
+				</div>
+				<div class="pbv">
+					<p>Терпіння</p>
+					<div style="--pgf: 68%; --pgp: 0%;">&nbsp;</div>
+					<p>6.8</p>
+				</div>
+				<div class="pbv">
+					<p>Цинізм</p>
+					<div style="--pgf: 9%; --pgp: 0%;">&nbsp;</div>
+					<p>0.9</p>
+				</div>
+			</div><div style="flex-basis:auto;flex-grow:1;margin:0 2%;">
+				<div class="pbv">
+					<p>Ввічливість</p>
+					<div style="--pgf: 94%; --pgp: 0%;">&nbsp;</div>
+					<p>9.4</p>
+				</div>
+				<div class="pbv">
+					<p>Критичність</p>
+					<div style="--pgf: 20%; --pgp: 7%;">&nbsp;</div>
+					<p>2.0</p>
+				</div>
+				<div class="pbv">
+					<p>Перфекціонізм</p>
+					<div style="--pgf: 73%; --pgp: 14%;">&nbsp;</div>
+					<p>8.7</p>
+				</div>
+				<div class="pbv">
+					<p>Толерантність</p>
+					<div style="--pgf: 91%; --pgp: 0%;">&nbsp;</div>
+					<p>9.1</p>
+				</div>
+				<div class="pbv">
+					<p>Чесність</p>
+					<div style="--pgf: 83%; --pgp: 0%;">&nbsp;</div>
+					<p>8.3</p>
+				</div>
+			</div><div style="flex-basis:auto;flex-grow:1;margin:0 2%;">
+				<div class="pbv">
+					<p>Зухвалість</p>
+					<div style="--pgf: 8%; --pgp: 1%;">&nbsp;</div>
+					<p>0.8</p>
+				</div>
+				<div class="pbv">
+					<p>Милосердя</p>
+					<div style="--pgf: 85%; --pgp: 0%;">&nbsp;</div>
+					<p>8.5</p>
+				</div>
+				<div class="pbv">
+					<p>Пунктуальність</p>
+					<div style="--pgf: 32%; --pgp: 7%;">&nbsp;</div>
+					<p>3.2</p>
+				</div>
+				<div class="pbv">
+					<p>Тревожність</p>
+					<div style="--pgf: 24%; --pgp: 0%;">&nbsp;</div>
+					<p>2.4</p>
+				</div>
+				<div class="pbv">
+					<p>Щедрість</p>
+					<div style="--pgf: 67%; --pgp: 7%;">&nbsp;</div>
+					<p>7.4</p>
+				</div>
+			</div><div style="flex-basis:auto;flex-grow:1;margin:0 2%;">
+				<div class="pbv">
+					<p>Дружелюбність</p>
+					<div style="--pgf: 86%; --pgp: 4%;">&nbsp;</div>
+					<p>8.6</p>
+				</div>
+				<div class="pbv">
+					<p>Надійність</p>
+					<div style="--pgf: 62%; --pgp: 0%;">&nbsp;</div>
+					<p>6.2</p>
+				</div>
+				<div class="pbv">
+					<p>Самоконтроль</p>
+					<div style="--pgf: 96%; --pgp: 0%;">&nbsp;</div>
+					<p>9.6</p>
+				</div>
+				<div class="pbv">
+					<p>Впевненість</p>
+					<div style="--pgf: 65%; --pgp: 8%;">&nbsp;</div>
+					<p>6.5</p>
+				</div>
+				<div class="pbv">
+					<p>Егоцентризм</p>
+					<div style="--pgf: 31%; --pgp: 0%;">&nbsp;</div>
+					<p>3.2</p>
+				</div>
+			</div></div>
+		</section>
+	</body>
+</html>

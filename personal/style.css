@@ -1,0 +1,82 @@
+h2 {
+	text-align: center;
+	font-family: Garamond, serif;
+} .pb > p { margin: 3px; }
+.pb > p:nth-child(1){ float: left; }
+.pb > p:nth-child(2){ float: right; }
+.pb > div {
+	background: linear-gradient(90deg, var(--pgc) 0 var(--pgf), #eeeeee calc(var(--pgf) + var(--pgp)));
+	width: 100%;
+	margin: 10px 0;
+	clear: both;
+	border-radius: 12px;
+	border: 1.5px solid gray;
+} .pbv > div {
+	background: linear-gradient(0deg, var(--pgc) 0 var(--pgf), #eeeeee calc(var(--pgf) + var(--pgp)));
+	line-height: 100px;
+	width: 20px;
+	margin: 0 auto;
+	border-radius: 8px;
+	border: 1.5px solid gray;
+} .pbv > p {
+	text-align: center;
+	margin: 5px 0;
+	font-size: 0.9rem;
+} .itrs { flex-basis: auto; margin: 0 3%; }
+.itrs > p { font-weight: bold; font-size: 1.1em; color: darkblue; margin: 3px 0; }
+.itrs > a { text-decoration: none; color: gray; font-size: 0.9em; cursor: pointer; }
+.itrsPn {
+	background-color: lightgray;
+	padding: 1%; margin: 12px 0;
+	border: 1px solid black;
+	border-radius: 12px;
+	display: none;
+} .proj {
+	display: flex;
+	align-items: center;
+	background-color: #fffdd0;
+	margin: 0 2% 7px 2%;
+} .proj > div:nth-child(2) {
+	flex-grow: 1;
+	overflow: auto;
+} .proj > * {
+	flex-basis: auto;
+	height: 160px;
+	border: 1px solid lightgray;
+	margin: 0; padding: 7px;
+} .proj a {
+	text-decoration: none;
+	background-color: blue;
+	color: white;
+} .proj a:hover { background-color: darkblue; }
+.introImg {
+	width: 15vw;
+	height: 15vw;
+	box-shadow: 0px 0px 5px black;
+	margin-top: 15px;
+} .babel-h { font: bold 1.3rem "Garamond", sans-serif; padding: 8px; }
+.babel { font: normal 0.8rem "Garamond"; padding: 5px; }
+.flag {
+	width: 40px; height: 40px;
+	background: linear-gradient(0deg, #ffd700 50%, #0057b8 50%);
+	display: inline-block;
+	border-radius: 50%;
+	vertical-align: middle;
+} .compass {
+	width: 35px; height: 35px;
+	background: deepskyblue;
+	border-left: 2px solid darkgray; border-bottom: 2px solid darkgray;
+	display: inline-block;
+	vertical-align: middle;
+} .langs {
+	position: absolute;
+	top: 15px; right: 15px;
+	background-color: orange;
+	border: 1px solid white;
+	border-radius: 8px;
+	padding: 5px;
+} .langs > a {
+	color: white;
+	text-decoration: none;
+	margin: 5px;
+}
