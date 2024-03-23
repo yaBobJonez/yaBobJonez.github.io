@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap');
+
+* { box-sizing: border-box; }
+body {
+    margin: 0;
+    background: url("background.jpg") no-repeat center 30%;
+}
+main {
+    margin: 8%;
+    background-color: #eddaab;
+    border: 3px solid #5e0087;
+    border-radius: 7px;
+    padding: 1em 2em;
+}

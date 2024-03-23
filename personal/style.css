@@ -80,3 +80,13 @@ h2 {
 	text-decoration: none;
 	margin: 5px;
 }
+#deprecation-warning {
+	position: fixed;
+	top: 0; left: 0;
+	width: 100%;
+	background-color: red;
+	color: white;
+	font-family: sans-serif;
+	text-align: center;
+	padding: 2em;
+}

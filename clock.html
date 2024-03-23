@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>yaBJ's Inner Clock</title>
+</head>
+<body>
+    <h1>My Inner Clock</h1>
+    <table>
+        <tr>
+            <td>Real-world date:</td>
+            <td id="realDate"></td>
+        </tr>
+        <tr>
+            <td>Current date:</td>
+            <td id="currentDate">Failed to update</td>
+        </tr>
+        <tr>
+            <td>Days behind real date:</td>
+            <td id="daysLag">Failed to update</td>
+        </tr>
+        <tr>
+            <td>Stable date:</td>
+            <td id="stableDate">Failed to update</td>
+        </tr>
+        <tr>
+            <td>Next date:</td>
+            <td id="nextDate">Failed to update</td>
+        </tr>
+        <tr>
+            <td>Latest advance was on:</td>
+            <td id="advanceDate">Failed to update</td>
+        </tr>
+    </table>
+    <h2>(not) FAQ:</h2>
+    <h3>What is this?</h3>
+    <p>
+        I feel like I've lost track of time quite a long time ago. I had graduated from school without a clear vision
+        on my future so fast, then this f#cking war has begun. Sometimes I'm feeling stressed, down, or just too busy
+        to notice the time flow. This tiny diary-like page shows what day is today in my head, as well as how much I
+        lag behind.
+    </p>
+    <h3>What is the "Stable date"?</h3>
+    <p>
+        It may sound like all of this is made up for fun, IKR. Well, recently I've started mentally advancing my inner
+        clock, getting better at time tracking. It takes a lot of... time. Y'know, sometimes you're feeling so bad, you
+        want to either skip the day, or, in my case, return one day back. The stable date is the day I feel I've finally
+        overcome, passed it, so it signifies the day before which I'll not revert my clock. Basically, days before the
+        stable day are "in the past".
+    </p>
+    <h3>What is the "Next date"?</h3>
+    <p>
+        Again, it's all about my feelings. I may suddenly "leap ahead", skipping several days, if I feel it's... time
+        to do so. The clock can thus advance several days, maybe even months, forward.
+    </p>
+    <h3>Why?</h3>
+    <p>
+        Why are you reading it all then?
+    </p>
+    <h3>This page looks ugly.</h3>
+    <p>
+        I know, it has zero styling. The goal was not to create a beautiful website, anyway.
+    </p>
+    <h3>Are you seeking for help?</h3>
+    <p>
+        I've never said that. I don't need psychological aid, at least now. I just need some time to sort things out.
+        Thank you for supporting me though :)
+    </p>
+    <script>
+        function updateFromJSON(json) {
+            let today = new Date();
+            let current = new Date(json["current"]);
+            let data = {
+                "currentDate": current.toLocaleDateString(),
+                "stableDate": new Date(json["stable"]).toLocaleDateString(),
+                "nextDate": new Date(json["next"]).toLocaleDateString(),
+                "advanceDate": new Date(json["changed"]).toLocaleDateString()
+            };
+            data["realDate"] = today.toLocaleDateString();
+            data["daysLag"] = Math.floor( (+today - +current) / (1000*60*60*24) );
+
+            for (let key in data) document.getElementById(key).innerHTML = data[key];
+        }
+
+        fetch("https://gist.githubusercontent.com/yaBobJonez/479b36ab67d5fd15cc46ce13e5193d4c/raw/2f9b508cd14e8f99b0d9beee5c9a7a6f64a11c6f/clock.json").then(r => r.json())
+            .then(data => updateFromJSON(data));
+    </script>
+</body>
+</html>

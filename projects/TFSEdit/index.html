@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>TFSEdit — yaBJ</title>
+    <link rel="stylesheet" href="../styles/projects.css"/>
+    <link rel="stylesheet" href="../styles/common.css"/>
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20,400,0,0"/>
+</head>
+<body class="projects">
+    <h1 class="projects-h1">TuFaireSites Editor</h1>
+    <p class="projects-p">
+        TFSEdit is a simple Free and Open-Source Software for absolute beginners in web development that can be used to
+        create and edit HTML, CSS, JS websites; written on Java with OpenJFX and AceEditor. It offers an intuitive
+        graphical interface with a website preview area (WebKit-based, not perfect though), project tree, and an editor
+        component that supports syntax highlighting an autocompletion.
+    </p>
+    <div class="projects-images">
+        <img src="images/Interface.png"/>
+    </div>
+    <ol class="projects-ol">
+        <li>Open a Project (directory)</li>
+        <li>Reload the opened Project from Disk</li>
+        <li>Create a new Folder (only if the parent directory is selected in the Tree)</li>
+        <li>Create a new File (HTML/CSS/JS) (only if the parent directory is selected in the Tree)</li>
+        <li>Delete the selected File or Folder</li>
+        <li>Save the Project onto the Disk</li>
+        <li>Run in the Preview area</li>
+        <li>Code Generation helper tools</li>
+        <li>Project Tree view area</li>
+        <li>Website Preview area</li>
+        <li>Code editor (currently opened file)</li>
+    </ol>
+    <p class="projects-p">
+        Upon opening your project, you can double-click or press the arrows in the Tree view to fold/expand directories.
+        Single-click a file or a folder to select it, double-click a file to open it in the editor. Upon switching files
+        the previously opened one is automatically saved. If the project has been externally changed, you should reload
+        it before making any edits or opening files in TFSEdit. In order to create a new file, make sure you have
+        selected a directory and entered the full filename with its respective extension. Pressing the run button allows
+        you to preview the currently open HTML file in the Preview area.
+    </p>
+    <p class="projects-note">
+        You can press F6 to Run the opened file in the Preview area. Also, F9 opens Text Generation and F11 Table
+        Generation helper windows.
+    </p>
+    <div class="projects-images">
+        <img class="no-border" src="images/TextGenerator.png"/>
+        <img class="no-border" src="images/TableGenerator.png"/>
+    </div>
+    <p class="projects-p">
+        The Text Generation helper allows you to select font options, colors, make the text bold or cursive, and
+        generate either &lt;p&gt; or any &lt;h_&gt; tags. The Table Generation window works in a similar way: you can
+        select the number of rows and columns, whether to collapse borders, border style, colors, padding, and some more
+        options in order to generate HTML and CSS template code for a table.
+    </p>
+    <div class="projects-buttons">
+        <a href="https://github.com/yaBobJonez/TFSEdit/releases/download/v1.2.3-rc/tufairesites-1.2.3-rc.tar.gz"
+           class="projects-btn"><span class="material-symbols-outlined"
+                                      style="vertical-align: -6px;">download</span> Linux</a>
+        <a href="https://github.com/yaBobJonez/TFSEdit" class="projects-btn"><span
+                class="material-symbols-outlined" style="vertical-align: -6px;">code</span> Source</a>
+    </div>
+    <p class="projects-note">
+        Use <code>java -jar &lt;path to .jar file&gt;</code> to run. If you want to compile from source, you can use Maven for
+        that. At the moment, there are no Windows and macOS binaries available, but I may compile them in the future.
+    </p>
+</body>
+</html>
