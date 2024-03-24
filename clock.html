@@ -62,11 +62,6 @@
     <p>
         I know, it has zero styling. The goal was not to create a beautiful website, anyway.
     </p>
-    <h3>Are you seeking for help?</h3>
-    <p>
-        I've never said that. I don't need psychological aid, at least now. I just need some time to sort things out.
-        Thank you for supporting me though :)
-    </p>
     <script>
         function updateFromJSON(json) {
             let today = new Date();
@@ -83,7 +78,8 @@
             for (let key in data) document.getElementById(key).innerHTML = data[key];
         }
 
-        fetch("https://gist.githubusercontent.com/yaBobJonez/479b36ab67d5fd15cc46ce13e5193d4c/raw/2f9b508cd14e8f99b0d9beee5c9a7a6f64a11c6f/clock.json").then(r => r.json())
+        fetch("https://api.github.com/gists/479b36ab67d5fd15cc46ce13e5193d4c").then(r => r.json())
+            .then(c => JSON.parse(c["files"]["clock.json"]["content"]))
             .then(data => updateFromJSON(data));
     </script>
 </body>
