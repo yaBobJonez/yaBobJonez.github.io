@@ -23,7 +23,7 @@ body { margin: 0; }
 }
 .projects-images {
     display: flex;
-    justify-content: center;
+    justify-content: center; /* TODO space-around?! */
     column-gap: 5%;
     row-gap: 2em;
     padding: 0.83em 5%; /* TODO margin? */
