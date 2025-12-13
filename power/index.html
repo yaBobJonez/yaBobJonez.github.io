@@ -25,7 +25,7 @@
         const {region, dsos, queue} = await fetch("https://api.github.com/gists/4ec4f7b97179cf442396387c4bf2eab4")
             .then(r => r.json())
             .then(c => JSON.parse(c["files"]["power.json"]["content"]));
-        const data = await fetch(`https://app.yasno.ua/api/blackout-service/public/shutdowns/regions/${region}/dsos/${dsos}/planned-outages`)
+        const data = await fetch(`https://cors-anywhere.com/https://app.yasno.ua/api/blackout-service/public/shutdowns/regions/${region}/dsos/${dsos}/planned-outages`)
             .then(r => r.json());
         const {today: {slots, status}, updatedOn} = data[queue];
 
